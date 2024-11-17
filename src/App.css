@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.headerX {
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
+  height: 60px; /* Set a specific height in pixels */
+}
+
+
+.container { 
+  display: flex; width: 100%; height: 90vh; 
+  box-sizing: border-box; 
+}
+
+.leftcontent {
+  width: 75%;
+  background-color: lightgreen;
+  padding: 10px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.rightcontent {
+  width: 25%;
+  background-color: lightcoral;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  position: center;
+
+}
+
+.right-content-container { 
+  display: flex; flex-direction: column; 
+} 
+
+.right-content-container { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; /* Center content horizontally */ 
+  justify-content: center; /* Center content vertically */ 
+} 
+/* Button Styles */ 
+button { 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  position: relative; 
+}
+.rgBtn { 
+  background-color: #4CAF50; /* Green */ 
+  color: white; 
+} 
+.lgBtn { 
+  background-color: #008CBA; /* Blue */ 
+  color: white; 
+} 
+.otBtn { 
+  background-color: #f44336; /* Red */ 
+  color: white; 
+} 
+button:hover { 
+  opacity: 0.9; 
+} 
+.right-content-container { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; /* Center content horizontally */ 
+  justify-content: center; /* Center content vertically */ 
+}
+.right-content-container button {
+   margin: 10px 0; /* Add spacing between buttons */ 
+   width: 200px; /* Set fixed width for buttons */ 
+}
+@media (max-width: 768px) { 
+  .container { flex-direction: column; 
+  } 
+  .leftcontent, .rightcontent { width: 100%; 
+  } 
+}
+
+.left-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding: 10px;
+}
+
+.left-content-container video {
+  margin: -20px 10px 10px 10px; /* Move video upward with negative margin-top */
+  width: 100%; /* Set video width to 100% of its container */
+  max-width: 700px; /* Optional: limit the max width */
+  height: 500px; /* Set video height */
+  border: none; /* Remove border */
+}
+
