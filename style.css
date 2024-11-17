@@ -1,0 +1,264 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0f7ff;
+  overflow: hidden;
+  touch-action: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header {
+  background-image: url("/public/bgez.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  color: white; /* Text color */
+  text-align: center; /* Center align the text */
+  padding: 50px 0; /* Add padding if necessary */
+}
+.left-column.right-column {
+  margin-bottom: 5%;
+}
+
+* {
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
+html {
+  overflow: hidden;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #d0e7ff;
+}
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #b0d7ff;
+  outline: none;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  position: right;
+}
+button:hover {
+  opacity: 1;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #ff4d4d;
+}
+.cancelbtn:hover {
+  background-color: #ff3333;
+}
+.optionO {
+  font-size: 40px;
+}
+.yrLvl {
+  border: 1px solid #007bff;
+  height: 40px;
+}
+.yrLvld {
+  display: inline-block;
+}
+
+.buttonX:hover {
+  background-color: #0a74da; /* Slightly darker blue on hover */
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+  border-radius: 20px;
+  font-size: 5vh;
+  border-radius: 10px;
+}
+/* Add padding to container elements */
+.containerSign {
+  padding: 16px;
+  background-color: #f0f8ff;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 123, 255, 0.5);
+  padding-top: 50px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  height: 90%;
+  width: 80%; /* Could be more or less, depending on screen size */
+  font-size: 50px; /* Adjust font size as needed */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+input::placeholder {
+  font-size: 40px; /* Adjust placeholder text size */
+  height: 60px;
+  border: #333;
+}
+.phBox {
+  font-size: 40px; /* Adjust placeholder text size */
+  height: 50px;
+  border: #333;
+  width: 90%;
+}
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #b0d7ff;
+  margin-bottom: 25px;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.close:hover,
+.close:focus {
+  color: #007bff;
+  cursor: pointer;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  border-radius: 10px; /* Adjust this value for more or less rounding */
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+    font-size: 15vh;
+  }
+}
+
+.container {
+  display: flex;
+}
+.right-column {
+  flex: 0 0 25%;
+  padding: 10px;
+  border: 1px solid #0026ff;
+}
+.left-column {
+  flex: 0 0 75%;
+  padding: 10px;
+  border: 1px solid #0026ff;
+}
+#clock-container {
+  text-align: left;
+}
+#txt {
+  font-size: 3vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #333;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Increase container height */
+  background-color: #1e90ff;
+  cursor: pointerss;
+}
+.button-container:hover {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Increase container height */
+  background-color: #1e90ff;
+}
+
+.buttonX {
+  height: 10vh; /* Increase button height */
+  width: 100%; /* Adjust button width */
+  border-radius: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100px; /* Adjust font size */
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px; /* Increase padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; /* Prevent text wrapping */
+  text-align: center;
+}
+/*for live stream video*/
+#containerVideo {
+  margin: 0px auto;
+  width: 100%;
+  height: 30vh;
+  border: 10px #333 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the video element vertically */
+}
+
+#videoElement {
+  width: 100%;
+  height: 100%;
+  background-color: #666;
+}
